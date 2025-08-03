@@ -4,12 +4,13 @@ import React from "react";
 
 export default function Navbar () {
   return (
-    <nav className="navbar navbar-dark bg-dark border-bottom border-body navbar-expand-lg mt-2 fiexd-top">
+    <nav className="navbar fixed-top navbar-dark bg-dark border-bottom border-body navbar-expand-lg">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          <h3>Rahmat Taufik</h3>
+          <h3>
+            <Link className="text-white" href="/">Rahmat Taufik</Link>
+          </h3>
           {/* <img src="/img/logo.png" width="50px" height="50px" style={{borderRadius: "100%"}} alt="" srcset="" /> */}
-        </a>
+
         <button
           className="navbar-toggler"
           type="button"

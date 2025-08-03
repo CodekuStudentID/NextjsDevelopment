@@ -4,17 +4,22 @@ import MainLayouts from "@/Layouts/MainLayouts";
 export default  function index () {
     return (
      <MainLayouts>
-           <>
-            <p>this default pages next js</p>
-        
-            <img style={{
-                width: "200px",
-                height: "200px",
-                marginBottom: "20px"
-            }} src="/img/logo.jpeg" />
+            <div>
 
-            <button
+                <h1 style={{
+                    marginTop: "200px",
+                    textAlign: "center"
+                }}>Welcome To Development Website Next Js !</h1>
+
+               <div 
+               style={{
+                display: "flex",
+                justifyContent: "center"
+               }}
+               >
+                 <button
                 style={{
+                    marginTop: "10px",
                     width: "auto",
                     height: "40px",
                     padding: "8px",
@@ -28,9 +33,10 @@ export default  function index () {
                         textDecoration: "none",
                         color: "white"
                     }}
-                href="/home">Go to default Page</Link>
+                href="/home">Go to Home Page</Link>
             </button>
-        </>
+               </div>
+            </div>
      </MainLayouts>    
         )
 }
