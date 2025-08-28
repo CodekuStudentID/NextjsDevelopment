@@ -2,13 +2,10 @@
 "use client";
 
 import ButtonCloseFormLogin from "./buttonCloseFromLogin";
-import ButtonFormLogin from "./buttonFormLogin";
 
 export default function FormLogin() {
   return (
     <section>
-<ButtonFormLogin />
-
       <div
         id="hs-modal-signin"
         className="hs-overlay hidden size-full fixed top-0 start-0 z-80 overflow-x-hidden overflow-y-auto"
