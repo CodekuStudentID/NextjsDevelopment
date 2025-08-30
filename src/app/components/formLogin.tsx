@@ -1,6 +1,7 @@
 "use client";
 
 import ButtonCloseFormLogin from "./buttonCloseFromLogin";
+import Link from "next/link";
 
 export default function FormLogin() {
   return (
@@ -27,6 +28,10 @@ export default function FormLogin() {
                 <p className="mt-2 text-sm text-gray-600 dark:text-neutral-400">
                   Dont have an account yet?
                 </p>
+
+                <Link href="/Register">
+                  Sign Up Here
+                </Link>
               </div>
 
               <div className="mt-5">
