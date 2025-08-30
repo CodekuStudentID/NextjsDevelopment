@@ -142,7 +142,7 @@ export default function RegisterPage() {
 
                   <div className="mt-6 flex justify-center gap-x-4">
                     <button type="button" className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 dark:bg-transparent dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" onClick={closeModal}>
-                      Close
+                      Tutup
                     </button>
                   </div>
                 </div>
