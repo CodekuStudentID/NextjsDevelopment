@@ -1,6 +1,5 @@
 // Logika: Prisma Client dibuat global biar tidak duplicate saat dev mode
-
-import { PrismaClient } from "../src/generated/prisma"; // Path yang benar sesuai dengan struktur proyek
+import { PrismaClient } from '../src/generated/prisma';
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient };
 
