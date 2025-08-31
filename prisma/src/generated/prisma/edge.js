@@ -148,6 +148,10 @@ const config = {
         "fromEnvVar": null,
         "value": "windows",
         "native": true
+      },
+      {
+        "fromEnvVar": null,
+        "value": "rhel-openssl-3.0.x"
       }
     ],
     "previewFeatures": [],
@@ -174,8 +178,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"./src/generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel playing_with_neon {\n  id    Int    @id @default(autoincrement())\n  name  String\n  value Float? @db.Real\n}\n\nmodel User {\n  id        String   @id @default(uuid())\n  email     String   @unique\n  password  String\n  name      String?\n  createdAt DateTime @default(now())\n}\n",
-  "inlineSchemaHash": "a8ecfa5a30232d779946aa80ecc895c6b4d4d05e8a708fbdd176d2f4fdca1951",
+  "inlineSchema": "// generator client {\n//   provider = \"prisma-client-js\"\n//   output   = \"./src/generated/prisma\"\n// }\n\n// datasource db {\n//   provider = \"postgresql\"\n//   url      = env(\"DATABASE_URL\")\n// }\n\n// model playing_with_neon {\n//   id    Int    @id @default(autoincrement())\n//   name  String\n//   value Float? @db.Real\n// }\n\n// model User {\n//   id       String   @id @default(uuid())\n//   email    String   @unique\n//   password String\n//   name     String?\n//   createdAt DateTime @default(now())\n// }\n\ngenerator client {\n  provider      = \"prisma-client-js\"\n  output        = \"./src/generated/prisma\"\n  binaryTargets = [\"native\", \"rhel-openssl-3.0.x\"] // Tambahkan baris ini\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel playing_with_neon {\n  id    Int    @id @default(autoincrement())\n  name  String\n  value Float? @db.Real\n}\n\nmodel User {\n  id        String   @id @default(uuid())\n  email     String   @unique\n  password  String\n  name      String?\n  createdAt DateTime @default(now())\n}\n",
+  "inlineSchemaHash": "2019f4b519ebf3e43368163ef55317b751258fc3f56e6b3946eb91f4731d4078",
   "copyEngine": true
 }
 config.dirname = '/'
