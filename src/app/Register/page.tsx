@@ -47,7 +47,7 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="m-12 bg-white border border-gray-200 rounded-xl shadow-2xs dark:bg-neutral-900 dark:border-neutral-700">
+    <div className="m-8 mt-22 bg-white border border-gray-200 rounded-xl shadow-2xs dark:bg-neutral-900 dark:border-neutral-700">
       <div className="p-4 sm:p-7">
         <div className="text-center">
           <h1 className="block text-2xl font-bold text-gray-800 dark:text-white">Sign up</h1>
