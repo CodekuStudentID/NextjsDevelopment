@@ -42,11 +42,11 @@ export async function POST(req: Request) {
       { message: "User registered successfully", user },
       { status: 201 }
     );
-  } catch (error) {
-    console.error(error);
-    return NextResponse.json(
-      { error: "Something went wrong" },
-      { status: 500 }
-    );
-  }
+  } catch (error: any) {
+  console.error("Register API Error:", error);
+  return NextResponse.json(
+    { error: error.message || "Unknown error", stack: error.stack },
+    { status: 500 }
+  );
+}
 }
